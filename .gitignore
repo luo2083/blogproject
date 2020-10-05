@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+将删除 .gitignore
+将删除 .idea/inspectionProfiles/
+将删除 .idea/workspace.xml
+将删除 blog/__pycache__/
+将删除 blog/migrations/__pycache__/
+将删除 blog/templatetags/__pycache__/
+将删除 blogproject/__pycache__/
+将删除 comments/__pycache__/
+将删除 comments/migrations/__pycache__/
+将删除 comments/templatetags/__pycache__/
+db.sqlite3
