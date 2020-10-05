@@ -10,3 +10,8 @@
 将删除 comments/migrations/__pycache__/
 将删除 comments/templatetags/__pycache__/
 db.sqlite3
+bcrypt             3.2.0
+cffi               1.14.3
+cryptography       3.1.1
+fabric             2.5.0
+
