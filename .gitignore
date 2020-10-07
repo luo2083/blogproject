@@ -15,3 +15,5 @@ cffi               1.14.3
 cryptography       3.1.1
 fabric             2.5.0
 
+!/_credentials.py
+/_credentials.py
