@@ -21,7 +21,7 @@ def deploy(c):
     project_root_path = '/home/luo/apps/blogproject/'
 
     with c.cd(supervisor_conf_path):
-        cmd = 'supervisorctl stop {}'.format(supervisor_program_name)
+        cmd = 'supervisorctl -c /home/luo/etc/supervisord.conf stop {}'.format(supervisor_program_name)
         c.run(cmd)
 
         with c.cd(project_root_path):
@@ -35,6 +35,6 @@ def deploy(c):
             c.run('/home/luo/Envspy3.6/blogprojectenv/bin/python3 manage.py collectstatic --noinput')
 
         with c.cd(supervisor_conf_path):
-            cmd = 'supervisorctl start {}'.format(supervisor_program_name)
+            cmd = 'supervisorctl -c /home/luo/etc/supervisord.conf start {}'.format(supervisor_program_name)
             c.run(cmd)
 
